@@ -1,7 +1,7 @@
 {
-  "name": "@packages/ui",
+  "name": "@packages/vite-config",
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "main": "src/main.js"
+  "main": "index.js"
 }
