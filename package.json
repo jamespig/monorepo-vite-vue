@@ -12,6 +12,10 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.14.0",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "dependencies": {
     "element-plus": "^2.10.7",
     "pinia": "^3.0.3",
