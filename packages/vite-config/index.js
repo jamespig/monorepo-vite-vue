@@ -4,9 +4,11 @@ import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import { fileURLToPath, URL } from "node:url";
+import { resolve } from "path";
+import UnoCSS from "unocss/vite";
 
 export function createViteConfig(options) {
-  const { root, plugins = [], resolve = {} } = options;
+  const { root, plugins = [], resolveOptions = {} } = options;
 
   return defineConfig({
     root,
@@ -18,14 +20,15 @@ export function createViteConfig(options) {
       Components({
         resolvers: [ElementPlusResolver()],
       }),
+      UnoCSS({ configFile: fileURLToPath(new URL("../../uno.config.js", import.meta.url)) }),
       ...plugins,
     ],
     resolve: {
       alias: {
         "@": fileURLToPath(new URL("./src", import.meta.url)),
-        ...resolve.alias,
+        ...resolveOptions.alias,
       },
-      ...resolve,
+      ...resolveOptions,
     },
   });
 }

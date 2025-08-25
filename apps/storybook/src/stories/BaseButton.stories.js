@@ -1,11 +1,11 @@
 import { fn } from '@storybook/test';
 
-import { Button } from '@packages/ui';
+import { BaseButton } from '@packages/ui';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories
 const meta = {
   title: 'UI/Button',
-  component: Button,
+  component: BaseButton,
   // This component will have an automatically generated docsPage entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
   argTypes: {

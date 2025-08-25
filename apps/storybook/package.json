@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@packages/ui": "workspace:*",
+    "@packages/vite-config": "workspace:*",
     "vue": "^3.5.18"
   },
   "devDependencies": {

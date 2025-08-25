@@ -1,5 +1,5 @@
 <template>
-  <el-button type="primary">{{ text }}</el-button>
+  <el-button class="bg-red-500" type="primary">{{ text }}</el-button>
 </template>
 <script setup>
 import { ElButton } from 'element-plus'
@@ -7,7 +7,7 @@ import { ElButton } from 'element-plus'
 defineProps({
   text: {
     type: String,
-    default: 'Click me',
+    default: 'Click You',
   },
 })
 </script>

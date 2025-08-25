@@ -17,8 +17,11 @@
     "apps/*"
   ],
   "dependencies": {
+    "@unocss/preset-uno": "^66.4.2",
+    "@unocss/vite": "^66.4.2",
     "element-plus": "^2.10.7",
     "pinia": "^3.0.3",
+    "unocss": "^66.4.2",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },
